@@ -241,7 +241,7 @@ router.get('/test-auth-admin', async (req, res) => {
     try {
         // Test basic admin functions
         const { data: users, error: listError } = await supabase.auth.admin.listUsers({ page: 1, perPage: 1 });
-        
+
         if (listError) {
             return res.status(500).json({
                 error: 'Auth admin test failed',
@@ -249,7 +249,7 @@ router.get('/test-auth-admin', async (req, res) => {
                 code: listError.code
             });
         }
-        
+
         // Test user creation with minimal data
         const testEmail = `test-${Date.now()}@example.com`;
         const { data: testUser, error: createError } = await supabase.auth.admin.createUser({
@@ -257,7 +257,7 @@ router.get('/test-auth-admin', async (req, res) => {
             password: 'testpass123',
             email_confirm: true
         });
-        
+
         if (createError) {
             return res.status(500).json({
                 error: 'User creation test failed',
@@ -266,12 +266,12 @@ router.get('/test-auth-admin', async (req, res) => {
                 testEmail: testEmail
             });
         }
-        
+
         // Clean up test user
         if (testUser?.user?.id) {
             await supabase.auth.admin.deleteUser(testUser.user.id);
         }
-        
+
         res.json({
             status: 'OK',
             message: 'Auth admin functions working correctly',
@@ -294,9 +294,9 @@ router.get('/test-auth-admin', async (req, res) => {
 router.get('/test-specific-user', async (req, res) => {
     try {
         const testEmail = `peter.lewis.${Date.now()}@frp.live`;
-        
+
         console.log('Testing user creation with pattern:', testEmail);
-        
+
         const { data: testUser, error: createError } = await supabase.auth.admin.createUser({
             email: testEmail,
             password: 'testpass123',
@@ -308,7 +308,7 @@ router.get('/test-specific-user', async (req, res) => {
                 role: 'user'
             }
         });
-        
+
         if (createError) {
             return res.status(500).json({
                 error: 'Specific user creation test failed',
@@ -323,12 +323,12 @@ router.get('/test-specific-user', async (req, res) => {
                 }
             });
         }
-        
+
         // Clean up test user
         if (testUser?.user?.id) {
             await supabase.auth.admin.deleteUser(testUser.user.id);
         }
-        
+
         res.json({
             status: 'OK',
             message: 'Specific user creation test successful',
@@ -450,7 +450,7 @@ router.post('/register', [
                 name: authError.name
             });
             logger.error('Error creating auth user:', authError);
-            
+
             // Check if it's a duplicate email error
             if (authError.message && authError.message.includes('duplicate')) {
                 return res.status(400).json({
@@ -458,7 +458,7 @@ router.post('/register', [
                     message: 'A user with this email already exists'
                 });
             }
-            
+
             return res.status(500).json({
                 error: 'Failed to create user account',
                 details: authError.message,
