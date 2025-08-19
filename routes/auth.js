@@ -294,9 +294,9 @@ router.get('/test-auth-admin', async (req, res) => {
 router.get('/test-specific-user', async (req, res) => {
     try {
         const testEmail = `peter.lewis.${Date.now()}@frp.live`;
-
+        
         console.log('Testing user creation with pattern:', testEmail);
-
+        
         const { data: testUser, error: createError } = await supabase.auth.admin.createUser({
             email: testEmail,
             password: 'testpass123',
@@ -308,7 +308,7 @@ router.get('/test-specific-user', async (req, res) => {
                 role: 'user'
             }
         });
-
+        
         if (createError) {
             return res.status(500).json({
                 error: 'Specific user creation test failed',
@@ -323,12 +323,12 @@ router.get('/test-specific-user', async (req, res) => {
                 }
             });
         }
-
+        
         // Clean up test user
         if (testUser?.user?.id) {
             await supabase.auth.admin.deleteUser(testUser.user.id);
         }
-
+        
         res.json({
             status: 'OK',
             message: 'Specific user creation test successful',
@@ -338,6 +338,111 @@ router.get('/test-specific-user', async (req, res) => {
     } catch (error) {
         res.status(500).json({
             error: 'Specific user creation test failed',
+            details: error.message
+        });
+    }
+});
+
+// Test database constraints and triggers
+router.get('/test-db-constraints', async (req, res) => {
+    try {
+        // Test 1: Create user with minimal data (no metadata)
+        const testEmail1 = `minimal-${Date.now()}@example.com`;
+        console.log('Test 1: Creating user with minimal data:', testEmail1);
+        
+        const { data: user1, error: error1 } = await supabase.auth.admin.createUser({
+            email: testEmail1,
+            password: 'testpass123',
+            email_confirm: true
+        });
+        
+        if (error1) {
+            return res.status(500).json({
+                error: 'Minimal user creation failed',
+                details: error1.message,
+                code: error1.code,
+                testEmail: testEmail1
+            });
+        }
+        
+        // Test 2: Create user with metadata
+        const testEmail2 = `metadata-${Date.now()}@example.com`;
+        console.log('Test 2: Creating user with metadata:', testEmail2);
+        
+        const { data: user2, error: error2 } = await supabase.auth.admin.createUser({
+            email: testEmail2,
+            password: 'testpass123',
+            email_confirm: true,
+            user_metadata: {
+                firstName: 'Test',
+                lastName: 'User'
+            }
+        });
+        
+        if (error2) {
+            // Clean up first user
+            if (user1?.user?.id) {
+                await supabase.auth.admin.deleteUser(user1.user.id);
+            }
+            
+            return res.status(500).json({
+                error: 'Metadata user creation failed',
+                details: error2.message,
+                code: error2.code,
+                testEmail: testEmail2
+            });
+        }
+        
+        // Test 3: Create user with complex metadata
+        const testEmail3 = `complex-${Date.now()}@example.com`;
+        console.log('Test 3: Creating user with complex metadata:', testEmail3);
+        
+        const { data: user3, error: error3 } = await supabase.auth.admin.createUser({
+            email: testEmail3,
+            password: 'testpass123',
+            email_confirm: true,
+            user_metadata: {
+                firstName: 'Complex',
+                lastName: 'User',
+                organization: 'Test Org',
+                role: 'user',
+                preferences: { theme: 'dark' }
+            }
+        });
+        
+        // Clean up all test users
+        if (user1?.user?.id) {
+            await supabase.auth.admin.deleteUser(user1.user.id);
+        }
+        if (user2?.user?.id) {
+            await supabase.auth.admin.deleteUser(user2.user.id);
+        }
+        if (user3?.user?.id) {
+            await supabase.auth.admin.deleteUser(user3.user.id);
+        }
+        
+        if (error3) {
+            return res.status(500).json({
+                error: 'Complex metadata user creation failed',
+                details: error3.message,
+                code: error3.code,
+                testEmail: testEmail3
+            });
+        }
+        
+        res.json({
+            status: 'OK',
+            message: 'All database constraint tests passed',
+            testResults: {
+                minimalUser: 'success',
+                metadataUser: 'success',
+                complexMetadataUser: 'success'
+            },
+            timestamp: new Date().toISOString()
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Database constraint test failed',
             details: error.message
         });
     }
@@ -429,17 +534,28 @@ router.post('/register', [
 
         // Create user in Supabase Auth first
         console.log('Creating Supabase Auth user for:', email);
-        const { data: authUser, error: authError } = await supabase.auth.admin.createUser({
-            email: email,
-            password: password,
-            email_confirm: true,
-            user_metadata: {
-                firstName: firstName,
-                lastName: lastName,
-                organization: organization || '',
-                role: role || 'user'
-            }
-        });
+        
+        // Try creating user without metadata first to isolate the issue
+        let authUser, authError;
+        
+        try {
+            const result = await supabase.auth.admin.createUser({
+                email: email,
+                password: password,
+                email_confirm: true,
+                user_metadata: {
+                    firstName: firstName,
+                    lastName: lastName,
+                    organization: organization || '',
+                    role: role || 'user'
+                }
+            });
+            authUser = result.data;
+            authError = result.error;
+        } catch (error) {
+            console.error('Exception during user creation:', error);
+            authError = error;
+        }
 
         if (authError) {
             console.error('Supabase Auth error:', authError);
