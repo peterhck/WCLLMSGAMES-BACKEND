@@ -1,0 +1,361 @@
+2025-08-18 17:28:03 [ERROR]: Auth signup error: Email address "test@example.com" is invalid
+AuthApiError: Email address "test@example.com" is invalid
+    at handleError (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:69:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _handleRequest (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:114:9)
+    at async _request (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:95:18)
+    at async SupabaseAuthClient.signUp (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/GoTrueClient.js:321:23)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/auth.js:45:54
+{
+  "service": "av-master-backend",
+  "__isAuthError": true,
+  "name": "AuthApiError",
+  "status": 400,
+  "code": "email_address_invalid"
+}
+2025-08-18 17:28:47 [ERROR]: Authentication error:
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:28:47 [ERROR]: Authentication error:
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:35:29 [ERROR]: Error creating conversation: invalid input syntax for type uuid: "test-session-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:35:53 [ERROR]: Error creating conversation: invalid input syntax for type uuid: "anonymous-1755552953403"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:36:24 [ERROR]: Error creating conversation: new row violates row-level security policy for table "ai_conversations"
+{
+  "service": "av-master-backend",
+  "code": "42501",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:43:17 [ERROR]: Error creating conversation: new row violates row-level security policy for table "ai_conversations"
+{
+  "service": "av-master-backend",
+  "code": "42501",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:44:41 [ERROR]: Error creating/getting anonymous user: Failed to create anonymous user
+Error: Failed to create anonymous user
+    at createOrGetAnonymousUser (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:84:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:16:33
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:44:41 [ERROR]: Error starting conversation: Failed to create anonymous user
+Error: Failed to create anonymous user
+    at createOrGetAnonymousUser (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:84:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:16:33
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:57:42 [ERROR]: Error creating conversation: invalid input syntax for type uuid: "test-session-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:57:52 [ERROR]: Error creating conversation: new row violates row-level security policy for table "ai_conversations"
+{
+  "service": "av-master-backend",
+  "code": "42501",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:59:16 [ERROR]: Error creating conversation: insert or update on table "ai_conversations" violates foreign key constraint "ai_conversations_session_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (session_id)=(550e8400-e29b-41d4-a716-446655440000) is not present in table \"game_sessions\".",
+  "hint": null
+}
+2025-08-18 18:05:11 [ERROR]: Error creating game session: invalid input syntax for type uuid: "test-session-frontend-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 18:10:47 [ERROR]: Error creating game session: duplicate key value violates unique constraint "game_sessions_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(550e8400-e29b-41d4-a716-446655440000) already exists.",
+  "hint": null
+}
+2025-08-18 18:37:00 [ERROR]: Error creating game session: duplicate key value violates unique constraint "game_sessions_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9) already exists.",
+  "hint": null
+}
+2025-08-18 18:52:09 [ERROR]: Error in web search: 404 The model `gpt-5o` does not exist or you do not have access to it.
+Error: 404 The model `gpt-5o` does not exist or you do not have access to it.
+    at APIError.generate (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/error.js:54:20)
+    at OpenAI.makeStatusError (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/core.js:302:33)
+    at OpenAI.makeRequest (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/core.js:346:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:517:28
+{
+  "service": "av-master-backend",
+  "status": 404,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9714fae0fcc4175b-IAD",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Mon, 18 Aug 2025 22:52:09 GMT",
+    "server": "cloudflare",
+    "set-cookie": "__cf_bm=5.C0wmLLMnSt48E_rmt71XPOd5koeTRVCLldo_joI7s-1755557529-1.0.1.1-5twd68eFWeZ1kG3lBOCBMVUsYgSCrEuNCZfgq3bInIvV4nGEP.8NhL5d5uU4nz3i_vTWWAKHvuxNzCHLAIKFmSkRgxFJ.Z9fXiNHNjLxViU; path=/; expires=Mon, 18-Aug-25 23:22:09 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=eh4aeDaCj1swFKsLeegiy9GB6A.2F4rkAeYzVHdX4zI-1755557529916-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "transfer-encoding": "chunked",
+    "vary": "Origin",
+    "x-content-type-options": "nosniff",
+    "x-envoy-upstream-service-time": "10",
+    "x-request-id": "req_b9c6802396a14d20844ac0b88e95b8e7"
+  },
+  "request_id": "req_b9c6802396a14d20844ac0b88e95b8e7",
+  "error": {
+    "message": "The model `gpt-5o` does not exist or you do not have access to it.",
+    "type": "invalid_request_error",
+    "param": null,
+    "code": "model_not_found"
+  },
+  "code": "model_not_found",
+  "param": null,
+  "type": "invalid_request_error"
+}
+2025-08-18 18:52:30 [ERROR]: Error in web search: 400 Invalid value: 'web_search'. Supported values are: 'function' and 'custom'.
+Error: 400 Invalid value: 'web_search'. Supported values are: 'function' and 'custom'.
+    at APIError.generate (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/error.js:45:20)
+    at OpenAI.makeStatusError (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/core.js:302:33)
+    at OpenAI.makeRequest (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/core.js:346:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:517:28
+{
+  "service": "av-master-backend",
+  "status": 400,
+  "headers": {
+    "access-control-expose-headers": "X-Request-ID",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9714fb5e6e54e2ca-IAD",
+    "connection": "keep-alive",
+    "content-length": "209",
+    "content-type": "application/json",
+    "date": "Mon, 18 Aug 2025 22:52:30 GMT",
+    "openai-organization": "user-rzqxzrv6rxqndjgrq9yxjom6",
+    "openai-processing-ms": "38",
+    "openai-project": "proj_AHtYXYu1KkURrglB6N4nNS4X",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "set-cookie": "__cf_bm=0gkBHUnUJymfKGw1d3fQ5KbfDgdjJP5FXLeolFERCV0-1755557550-1.0.1.1-tDuQkPjjtYhRBkTpH1uhzrUSDUSw5o_SkYjNaoGtqoyG2X92fR5ipnxlwrGgbWSdK8DDLLN9PwMW9EcTv6CuUhGaJ8xpcypr4V6chrIK13s; path=/; expires=Mon, 18-Aug-25 23:22:30 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=dVRZK7pH4fw4SAyk6O0OOyRALP0nLAJny3X_i_2SKeo-1755557550082-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-envoy-upstream-service-time": "147",
+    "x-ratelimit-limit-requests": "10000",
+    "x-ratelimit-limit-tokens": "2000000",
+    "x-ratelimit-remaining-requests": "9999",
+    "x-ratelimit-remaining-tokens": "1999797",
+    "x-ratelimit-reset-requests": "6ms",
+    "x-ratelimit-reset-tokens": "6ms",
+    "x-request-id": "req_54e04ca83ce84a529985d24fe1b1bc1f"
+  },
+  "request_id": "req_54e04ca83ce84a529985d24fe1b1bc1f",
+  "error": {
+    "message": "Invalid value: 'web_search'. Supported values are: 'function' and 'custom'.",
+    "type": "invalid_request_error",
+    "param": "tools[0].type",
+    "code": "invalid_value"
+  },
+  "code": "invalid_value",
+  "param": "tools[0].type",
+  "type": "invalid_request_error"
+}
+2025-08-18 18:52:58 [ERROR]: Error saving web search: invalid input syntax for type uuid: "test-web-search-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 18:52:58 [ERROR]: Error tracking web search usage: new row for relation "api_usage" violates check constraint "api_usage_api_type_check"
+{
+  "service": "av-master-backend",
+  "code": "23514",
+  "details": "Failing row contains (317554a9-a93f-42b7-820c-48cacdb166df, 07a63a2d-2861-4a55-9ef7-41becba6a310, openai_web_search, 299, 0.001495, 1, t, null, 2025-08-18 22:52:58.124+00).",
+  "hint": null
+}
+2025-08-18 18:53:26 [ERROR]: Error saving web search: new row for relation "ai_messages" violates check constraint "ai_messages_message_type_check"
+{
+  "service": "av-master-backend",
+  "code": "23514",
+  "details": "Failing row contains (9b43a067-9ee2-4602-911d-8cffeb47bbf3, 12345678-1234-1234-1234-123456789012, 07a63a2d-2861-4a55-9ef7-41becba6a310, assistant, The Shure SM58 is a well-known and widely used dynamic vocal mic..., null, web_search, null, 299, 3740, 2025-08-18 22:53:26.805+00).",
+  "hint": null
+}
+2025-08-18 18:53:26 [ERROR]: Error tracking web search usage: new row for relation "api_usage" violates check constraint "api_usage_api_type_check"
+{
+  "service": "av-master-backend",
+  "code": "23514",
+  "details": "Failing row contains (4f3c04d7-b927-432d-844e-e5fb82d48939, 07a63a2d-2861-4a55-9ef7-41becba6a310, openai_web_search, 299, 0.001495, 1, t, null, 2025-08-18 22:53:26.92+00).",
+  "hint": null
+}
+2025-08-18 18:53:51 [ERROR]: Error saving web search: insert or update on table "ai_messages" violates foreign key constraint "ai_messages_conversation_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (conversation_id)=(12345678-1234-1234-1234-123456789012) is not present in table \"ai_conversations\".",
+  "hint": null
+}
+2025-08-18 19:14:15 [ERROR]: Error saving web search: insert or update on table "ai_messages" violates foreign key constraint "ai_messages_conversation_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (conversation_id)=(12345678-1234-1234-1234-123456789012) is not present in table \"ai_conversations\".",
+  "hint": null
+}
+2025-08-18 19:14:30 [ERROR]: Error saving pricing search: insert or update on table "ai_messages" violates foreign key constraint "ai_messages_conversation_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (conversation_id)=(12345678-1234-1234-1234-123456789012) is not present in table \"ai_conversations\".",
+  "hint": null
+}
+2025-08-18 20:11:47 [ERROR]: Error saving web search: invalid input syntax for type uuid: "test-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:05:57 [ERROR]: Error creating user profile: Could not find the 'first_name' column of 'users' in the schema cache
+{
+  "service": "av-master-backend",
+  "code": "PGRST204",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:20:46 [ERROR]: Error creating user profile: insert or update on table "users" violates foreign key constraint "users_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (id)=(835e582e-c93b-4e4b-a7c3-c50a71f9a3f9) is not present in table \"users\".",
+  "hint": null
+}
+2025-08-19 00:21:23 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(fdc60795-3c1e-4619-8a8c-e2f6a287639e) already exists.",
+  "hint": null
+}
+2025-08-19 00:21:30 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(6d77939c-e7a1-401b-9976-fba110ad66da) already exists.",
+  "hint": null
+}
+2025-08-19 00:30:43 [ERROR]: Error checking existing user: infinite recursion detected in policy for relation "users"
+{
+  "service": "av-master-backend",
+  "code": "42P17",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:32:16 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(68f29f2d-b2c9-4f9e-9d10-2289074b3373) already exists.",
+  "hint": null
+}
+2025-08-19 00:32:28 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(029becd8-3743-42fc-942a-10a2410ea10d) already exists.",
+  "hint": null
+}
+2025-08-19 00:37:32 [ERROR]: Error checking existing user: infinite recursion detected in policy for relation "users"
+{
+  "service": "av-master-backend",
+  "code": "42P17",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:43:32 [ERROR]: Error checking existing user: Could not find the function public.check_user_exists(user_email) in the schema cache
+{
+  "service": "av-master-backend",
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_user_exists with parameter user_email or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": "Perhaps you meant to call the function public.create_user_preferences"
+}
+2025-08-19 00:50:30 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(b943bffb-e1ca-47a0-b580-7118edde4961) already exists.",
+  "hint": null
+}
+2025-08-19 00:51:34 [ERROR]: Error creating game session: Could not find the 'updated_at' column of 'game_sessions' in the schema cache
+{
+  "service": "av-master-backend",
+  "code": "PGRST204",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:57:59 [ERROR]: Login error: Illegal arguments: string, undefined
+Error: Illegal arguments: string, undefined
+    at _async (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at verifyPassword (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/auth.js:40:25)
+    at /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/auth.js:224:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:58:05 [ERROR]: Error creating auth user: A user with this email address has already been registered
+AuthApiError: A user with this email address has already been registered
+    at handleError (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:69:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _handleRequest (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:114:9)
+    at async _request (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:95:18)
+    at async GoTrueAdminApi.createUser (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/GoTrueAdminApi.js:116:20)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/auth.js:74:54
+{
+  "service": "av-master-backend",
+  "__isAuthError": true,
+  "name": "AuthApiError",
+  "status": 422,
+  "code": "email_exists"
+}
+2025-08-19 00:58:11 [ERROR]: Error updating user profile: Could not find the 'password_hash' column of 'users' in the schema cache
+{
+  "service": "av-master-backend",
+  "code": "PGRST204",
+  "details": null,
+  "hint": null
+}

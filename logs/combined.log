@@ -1,0 +1,1845 @@
+2025-08-18 17:18:45 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:18:45 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:18:45 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:18:45 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:18:45 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:21:35 [INFO]: SIGINT received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:23:05 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:23:05 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:23:05 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:23:05 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:23:05 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:26:35 [INFO]: SIGINT received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:26:55 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:26:55 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:26:55 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:26:55 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:26:55 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:28:03 [ERROR]: Auth signup error: Email address "test@example.com" is invalid
+AuthApiError: Email address "test@example.com" is invalid
+    at handleError (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:69:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _handleRequest (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:114:9)
+    at async _request (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:95:18)
+    at async SupabaseAuthClient.signUp (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/GoTrueClient.js:321:23)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/auth.js:45:54
+{
+  "service": "av-master-backend",
+  "__isAuthError": true,
+  "name": "AuthApiError",
+  "status": 400,
+  "code": "email_address_invalid"
+}
+2025-08-18 17:28:47 [ERROR]: Authentication error:
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:28:47 [ERROR]: Authentication error:
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:35:07 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:35:07 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:35:07 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:35:07 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:35:07 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:35:07 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:35:29 [ERROR]: Error creating conversation: invalid input syntax for type uuid: "test-session-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:35:53 [ERROR]: Error creating conversation: invalid input syntax for type uuid: "anonymous-1755552953403"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:36:15 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:36:16 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:36:16 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:36:16 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:36:16 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:36:16 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:36:24 [ERROR]: Error creating conversation: new row violates row-level security policy for table "ai_conversations"
+{
+  "service": "av-master-backend",
+  "code": "42501",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:37:37 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:37:37 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:37:37 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:37:37 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:37:37 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:37:37 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:42:58 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:42:59 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:42:59 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:42:59 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:42:59 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:42:59 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:43:17 [ERROR]: Error creating conversation: new row violates row-level security policy for table "ai_conversations"
+{
+  "service": "av-master-backend",
+  "code": "42501",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:44:41 [ERROR]: Error creating/getting anonymous user: Failed to create anonymous user
+Error: Failed to create anonymous user
+    at createOrGetAnonymousUser (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:84:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:16:33
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:44:41 [ERROR]: Error starting conversation: Failed to create anonymous user
+Error: Failed to create anonymous user
+    at createOrGetAnonymousUser (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:84:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:16:33
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:57:26 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:57:27 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:57:27 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:57:27 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:57:27 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:57:27 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:57:42 [ERROR]: Error creating conversation: invalid input syntax for type uuid: "test-session-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:57:52 [ERROR]: Error creating conversation: new row violates row-level security policy for table "ai_conversations"
+{
+  "service": "av-master-backend",
+  "code": "42501",
+  "details": null,
+  "hint": null
+}
+2025-08-18 17:59:07 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:08 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:08 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:08 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:08 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:08 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:16 [ERROR]: Error creating conversation: insert or update on table "ai_conversations" violates foreign key constraint "ai_conversations_session_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (session_id)=(550e8400-e29b-41d4-a716-446655440000) is not present in table \"game_sessions\".",
+  "hint": null
+}
+2025-08-18 17:59:35 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:36 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:36 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:36 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:36 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:36 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:44 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: d4cbcd95-dd07-4502-a040-ad7035e22ace
+{
+  "service": "av-master-backend"
+}
+2025-08-18 17:59:54 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 287, cost: $0.0014349999999999999
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:04:44 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: e23ba0c3-ae87-4c6c-9a7e-ca883569f1b3
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:04 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:04 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:04 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:04 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:04 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:04 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:11 [ERROR]: Error creating game session: invalid input syntax for type uuid: "test-session-frontend-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 18:05:39 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:39 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:39 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:39 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:39 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:39 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:47 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: f62bab46-e5e5-492e-9ccb-39b51316e9e9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:05:55 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 306, cost: $0.0015300000000000001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:10:47 [ERROR]: Error creating game session: duplicate key value violates unique constraint "game_sessions_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(550e8400-e29b-41d4-a716-446655440000) already exists.",
+  "hint": null
+}
+2025-08-18 18:10:52 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 485aa9ba-5acf-4637-9901-2c3d8df1370d
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:11:00 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 287, cost: $0.0014349999999999999
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:14:59 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:15:00 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:15:00 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:15:00 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:15:00 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:15:00 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:15:17 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 320, cost: $0.0016
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:21:14 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:21:15 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:21:15 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:21:15 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:21:15 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:21:15 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:21:29 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 359, cost: $0.001795
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:31:14 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 620abdb8-d6e5-4570-b2fe-cfa1a8475a8f
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:31:16 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 224, cost: $0.0011200000000000001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:31:37 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 323, cost: $0.0016150000000000001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:32:10 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 388, cost: $0.00194
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:32:41 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 440, cost: $0.0022
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:32:45 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 531, cost: $0.0026550000000000002
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:37:00 [ERROR]: Error creating game session: duplicate key value violates unique constraint "game_sessions_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9) already exists.",
+  "hint": null
+}
+2025-08-18 18:37:53 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:37:54 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:37:54 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:37:54 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:37:54 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:37:54 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:38:09 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:38:09 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: f428f8a6-b593-4047-ba4f-6180d50a7928
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:38:15 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:38:15 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 36730f25-90e9-4ca9-8b27-4cba9639c3ea
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:38:24 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 297, cost: $0.001485
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:38:46 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:38:46 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: ca8e221a-e9f5-4c81-b325-eaa2b1ee1f24
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:38:48 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 235, cost: $0.001175
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:39:09 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 353, cost: $0.0017649999999999999
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:39:14 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 455, cost: $0.002275
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:39:25 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 548, cost: $0.0027400000000000002
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:39:35 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 649, cost: $0.003245
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:39:42 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 742, cost: $0.00371
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:42:29 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:42:29 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: eaf8f244-86fb-4829-ba4c-1fecf96fef6f
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:42:30 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 223, cost: $0.001115
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:42:44 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 313, cost: $0.001565
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:43:17 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 370, cost: $0.00185
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:48:11 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:48:11 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:48:11 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:48:11 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:48:11 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:48:11 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:51:55 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:51:58 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:51:58 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:51:58 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:51:58 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:51:58 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:09 [ERROR]: Error in web search: 404 The model `gpt-5o` does not exist or you do not have access to it.
+Error: 404 The model `gpt-5o` does not exist or you do not have access to it.
+    at APIError.generate (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/error.js:54:20)
+    at OpenAI.makeStatusError (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/core.js:302:33)
+    at OpenAI.makeRequest (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/core.js:346:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:517:28
+{
+  "service": "av-master-backend",
+  "status": 404,
+  "headers": {
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9714fae0fcc4175b-IAD",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "application/json; charset=utf-8",
+    "date": "Mon, 18 Aug 2025 22:52:09 GMT",
+    "server": "cloudflare",
+    "set-cookie": "__cf_bm=5.C0wmLLMnSt48E_rmt71XPOd5koeTRVCLldo_joI7s-1755557529-1.0.1.1-5twd68eFWeZ1kG3lBOCBMVUsYgSCrEuNCZfgq3bInIvV4nGEP.8NhL5d5uU4nz3i_vTWWAKHvuxNzCHLAIKFmSkRgxFJ.Z9fXiNHNjLxViU; path=/; expires=Mon, 18-Aug-25 23:22:09 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=eh4aeDaCj1swFKsLeegiy9GB6A.2F4rkAeYzVHdX4zI-1755557529916-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "transfer-encoding": "chunked",
+    "vary": "Origin",
+    "x-content-type-options": "nosniff",
+    "x-envoy-upstream-service-time": "10",
+    "x-request-id": "req_b9c6802396a14d20844ac0b88e95b8e7"
+  },
+  "request_id": "req_b9c6802396a14d20844ac0b88e95b8e7",
+  "error": {
+    "message": "The model `gpt-5o` does not exist or you do not have access to it.",
+    "type": "invalid_request_error",
+    "param": null,
+    "code": "model_not_found"
+  },
+  "code": "model_not_found",
+  "param": null,
+  "type": "invalid_request_error"
+}
+2025-08-18 18:52:20 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:22 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:22 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:22 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:22 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:22 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:30 [ERROR]: Error in web search: 400 Invalid value: 'web_search'. Supported values are: 'function' and 'custom'.
+Error: 400 Invalid value: 'web_search'. Supported values are: 'function' and 'custom'.
+    at APIError.generate (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/error.js:45:20)
+    at OpenAI.makeStatusError (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/core.js:302:33)
+    at OpenAI.makeRequest (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/openai/core.js:346:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/ai.js:517:28
+{
+  "service": "av-master-backend",
+  "status": 400,
+  "headers": {
+    "access-control-expose-headers": "X-Request-ID",
+    "alt-svc": "h3=\":443\"; ma=86400",
+    "cf-cache-status": "DYNAMIC",
+    "cf-ray": "9714fb5e6e54e2ca-IAD",
+    "connection": "keep-alive",
+    "content-length": "209",
+    "content-type": "application/json",
+    "date": "Mon, 18 Aug 2025 22:52:30 GMT",
+    "openai-organization": "user-rzqxzrv6rxqndjgrq9yxjom6",
+    "openai-processing-ms": "38",
+    "openai-project": "proj_AHtYXYu1KkURrglB6N4nNS4X",
+    "openai-version": "2020-10-01",
+    "server": "cloudflare",
+    "set-cookie": "__cf_bm=0gkBHUnUJymfKGw1d3fQ5KbfDgdjJP5FXLeolFERCV0-1755557550-1.0.1.1-tDuQkPjjtYhRBkTpH1uhzrUSDUSw5o_SkYjNaoGtqoyG2X92fR5ipnxlwrGgbWSdK8DDLLN9PwMW9EcTv6CuUhGaJ8xpcypr4V6chrIK13s; path=/; expires=Mon, 18-Aug-25 23:22:30 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=dVRZK7pH4fw4SAyk6O0OOyRALP0nLAJny3X_i_2SKeo-1755557550082-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None",
+    "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+    "x-content-type-options": "nosniff",
+    "x-envoy-upstream-service-time": "147",
+    "x-ratelimit-limit-requests": "10000",
+    "x-ratelimit-limit-tokens": "2000000",
+    "x-ratelimit-remaining-requests": "9999",
+    "x-ratelimit-remaining-tokens": "1999797",
+    "x-ratelimit-reset-requests": "6ms",
+    "x-ratelimit-reset-tokens": "6ms",
+    "x-request-id": "req_54e04ca83ce84a529985d24fe1b1bc1f"
+  },
+  "request_id": "req_54e04ca83ce84a529985d24fe1b1bc1f",
+  "error": {
+    "message": "Invalid value: 'web_search'. Supported values are: 'function' and 'custom'.",
+    "type": "invalid_request_error",
+    "param": "tools[0].type",
+    "code": "invalid_value"
+  },
+  "code": "invalid_value",
+  "param": "tools[0].type",
+  "type": "invalid_request_error"
+}
+2025-08-18 18:52:44 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:47 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:47 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:47 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:47 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:47 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:52:58 [ERROR]: Error saving web search: invalid input syntax for type uuid: "test-web-search-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 18:52:58 [ERROR]: Error tracking web search usage: new row for relation "api_usage" violates check constraint "api_usage_api_type_check"
+{
+  "service": "av-master-backend",
+  "code": "23514",
+  "details": "Failing row contains (317554a9-a93f-42b7-820c-48cacdb166df, 07a63a2d-2861-4a55-9ef7-41becba6a310, openai_web_search, 299, 0.001495, 1, t, null, 2025-08-18 22:52:58.124+00).",
+  "hint": null
+}
+2025-08-18 18:52:58 [INFO]: Web search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "What is the current price of Shure SM58 microphone?", tokens: 299, cost: $0.001495
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:53:26 [ERROR]: Error saving web search: new row for relation "ai_messages" violates check constraint "ai_messages_message_type_check"
+{
+  "service": "av-master-backend",
+  "code": "23514",
+  "details": "Failing row contains (9b43a067-9ee2-4602-911d-8cffeb47bbf3, 12345678-1234-1234-1234-123456789012, 07a63a2d-2861-4a55-9ef7-41becba6a310, assistant, The Shure SM58 is a well-known and widely used dynamic vocal mic..., null, web_search, null, 299, 3740, 2025-08-18 22:53:26.805+00).",
+  "hint": null
+}
+2025-08-18 18:53:26 [ERROR]: Error tracking web search usage: new row for relation "api_usage" violates check constraint "api_usage_api_type_check"
+{
+  "service": "av-master-backend",
+  "code": "23514",
+  "details": "Failing row contains (4f3c04d7-b927-432d-844e-e5fb82d48939, 07a63a2d-2861-4a55-9ef7-41becba6a310, openai_web_search, 299, 0.001495, 1, t, null, 2025-08-18 22:53:26.92+00).",
+  "hint": null
+}
+2025-08-18 18:53:26 [INFO]: Web search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "What is the current price of Shure SM58 microphone?", tokens: 299, cost: $0.001495
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:53:38 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:53:41 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:53:41 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:53:41 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:53:41 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:53:41 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:53:51 [ERROR]: Error saving web search: insert or update on table "ai_messages" violates foreign key constraint "ai_messages_conversation_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (conversation_id)=(12345678-1234-1234-1234-123456789012) is not present in table \"ai_conversations\".",
+  "hint": null
+}
+2025-08-18 18:53:51 [INFO]: Web search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "What is the current price of Shure SM58 microphone?", tokens: 315, cost: $0.001575
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:57:47 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:58:48 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:58:48 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:58:48 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:58:48 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 18:58:48 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:00:17 [INFO]: SIGINT received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:00:59 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:00:59 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:00:59 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:00:59 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:00:59 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:02:54 [INFO]: SIGINT received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:05:05 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:05:05 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:05:05 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:05:05 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:05:05 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:10:56 [INFO]: SIGINT received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:13:55 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:13:55 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:13:55 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:13:55 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:13:55 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:09 [INFO]: Performing web search for: "Shure SM58 microphone current price"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:09 [INFO]: Starting web search for: "Shure SM58 microphone current price"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:09 [INFO]: Web search completed, found 5 results
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:15 [ERROR]: Error saving web search: insert or update on table "ai_messages" violates foreign key constraint "ai_messages_conversation_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (conversation_id)=(12345678-1234-1234-1234-123456789012) is not present in table \"ai_conversations\".",
+  "hint": null
+}
+2025-08-18 19:14:15 [INFO]: Web search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "Shure SM58 microphone current price", tokens: 901, cost: $0.004505
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:21 [INFO]: Performing pricing search for: "Yamaha MG12XU mixer price"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:21 [INFO]: Performing pricing search for: "Yamaha MG12XU mixer price"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:30 [ERROR]: Error saving pricing search: insert or update on table "ai_messages" violates foreign key constraint "ai_messages_conversation_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (conversation_id)=(12345678-1234-1234-1234-123456789012) is not present in table \"ai_conversations\".",
+  "hint": null
+}
+2025-08-18 19:14:30 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "Yamaha MG12XU mixer price", tokens: 760, cost: $0.0038
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:59 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:14:59 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 7794b535-9f9b-4de6-86e0-77d1c764769d
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:15:01 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 230, cost: $0.00115
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:23:55 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:23:55 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: d446d04a-095c-46cb-8d27-4b27283c7597
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:23:57 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 235, cost: $0.001175
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:24:08 [INFO]: Performing pricing search for: "where can I buy good microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:24:08 [INFO]: Performing pricing search for: "where can I buy good microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:24:16 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy good microphones", tokens: 738, cost: $0.00369
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:28:23 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:28:23 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 56641879-1e0d-451d-b511-018c7d398f1c
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:28:24 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 224, cost: $0.0011200000000000001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:28:31 [INFO]: Performing pricing search for: "where can I buy good microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:28:31 [INFO]: Performing pricing search for: "where can I buy good microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 19:28:40 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy good microphones", tokens: 802, cost: $0.0040100000000000005
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:01:00 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:01:01 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: f6666cab-4f8d-436a-86e1-d89027cea81d
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:01:02 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 223, cost: $0.001115
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:01:10 [INFO]: Performing pricing search for: "tell me where I can buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:01:10 [INFO]: Performing pricing search for: "tell me where I can buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:01:20 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "tell me where I can buy microphones", tokens: 759, cost: $0.003795
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:08:57 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:08:57 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: def40e6f-e230-4495-bd53-7432d6b35f2f
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:09:00 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 220, cost: $0.0011
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:09:12 [INFO]: Performing pricing search for: "tutor tell me where I can buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:09:12 [INFO]: Performing pricing search for: "tutor tell me where I can buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:09:20 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "tutor tell me where I can buy microphones", tokens: 799, cost: $0.003995
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:10:46 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:10:58 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:10:58 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:10:58 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:10:58 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:10:58 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:11:39 [INFO]: Performing web search for: "where can I buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:11:39 [INFO]: Starting web search for: "where can I buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:11:39 [INFO]: Web search completed, found 5 results
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:11:47 [ERROR]: Error saving web search: invalid input syntax for type uuid: "test-123"
+{
+  "service": "av-master-backend",
+  "code": "22P02",
+  "details": null,
+  "hint": null
+}
+2025-08-18 20:11:47 [INFO]: Web search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy microphones", tokens: 927, cost: $0.004635
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:12:41 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:12:41 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 258224ee-07df-4686-8902-e3a8ca482d4a
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:12:42 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 222, cost: $0.00111
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:12:47 [INFO]: Performing pricing search for: "where can I buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:12:47 [INFO]: Performing pricing search for: "where can I buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:12:56 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy microphones", tokens: 829, cost: $0.004145
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:16:10 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:16:10 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 97957484-a7c3-4b57-84b6-8dbb223da553
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:16:11 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 223, cost: $0.001115
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:16:17 [INFO]: Performing pricing search for: "where can I buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:16:17 [INFO]: Performing pricing search for: "where can I buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:16:28 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy microphones", tokens: 730, cost: $0.00365
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:20:24 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:20:24 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 49bf914d-2bc9-4426-b4f5-7335dac21e3b
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:20:26 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 222, cost: $0.00111
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:20:38 [INFO]: Performing pricing search for: "where can I buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:20:38 [INFO]: Performing pricing search for: "where can I buy microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:20:46 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy microphones", tokens: 737, cost: $0.003685
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:22:15 [INFO]: Performing pricing search for: "where can I buy a power distribution"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:22:15 [INFO]: Performing pricing search for: "where can I buy a power distribution"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:22:22 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy a power distribution", tokens: 720, cost: $0.0036
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:24:30 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 1102, cost: $0.00551
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:25:09 [INFO]: Performing pricing search for: "should I buy the Yamaha dm3 or the Midas mixer"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:25:09 [INFO]: Performing pricing search for: "should I buy the Yamaha dm3 or the Midas mixer"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:25:14 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "should I buy the Yamaha dm3 or the Midas mixer", tokens: 776, cost: $0.00388
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:28:42 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:28:42 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 18188c89-ba3e-444e-a97a-b236b30e9195
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:28:44 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 229, cost: $0.001145
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:29:12 [INFO]: Performing pricing search for: "where can I buy the Midas"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:29:12 [INFO]: Performing pricing search for: "where can I buy the Midas"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:29:17 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy the Midas", tokens: 685, cost: $0.0034250000000000005
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:33:29 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:33:29 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: c9cfb073-091c-432d-b47c-c2d552eecadf
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:33:30 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 225, cost: $0.0011250000000000001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:33:52 [INFO]: Performing pricing search for: "where can I buy the Yamaha dm-3 mixer"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:33:52 [INFO]: Performing pricing search for: "where can I buy the Yamaha dm-3 mixer"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:33:59 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy the Yamaha dm-3 mixer", tokens: 730, cost: $0.00365
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:36:44 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 691, cost: $0.0034549999999999997
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:38:53 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:38:55 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:38:55 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:38:55 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:38:55 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:38:55 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:39:14 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: a582d483-42e6-46db-a066-063ddb7908d6
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:39:19 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 282, cost: $0.0014099999999999998
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:39:41 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:39:41 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 0f8d904c-b89d-4f01-8df0-f888bf7f3f61
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:39:42 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 285, cost: $0.0014249999999999998
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:40:02 [INFO]: Performing pricing search for: "Play album Where can I buy the show DM microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:40:02 [INFO]: Performing pricing search for: "Play album Where can I buy the show DM microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:40:07 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "Play album Where can I buy the show DM microphones", tokens: 670, cost: $0.00335
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:43:20 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:43:23 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:43:23 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:43:23 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:43:23 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:43:23 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:43:51 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 320, cost: $0.0016
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:44:17 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:44:17 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: e7cc4169-b7ef-410f-8e87-668c75d973bd
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:44:18 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 280, cost: $0.0014000000000000002
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:44:32 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 314, cost: $0.00157
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:44:47 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 442, cost: $0.00221
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:45:27 [INFO]: Performing pricing search for: "where can I buy the show sm58 microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:45:27 [INFO]: Performing pricing search for: "where can I buy the show sm58 microphones"
+{
+  "service": "av-master-backend"
+}
+2025-08-18 20:45:35 [INFO]: Pricing search completed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, query: "where can I buy the show sm58 microphones", tokens: 776, cost: $0.00388
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:05:40 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:05:43 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:05:43 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:05:43 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:05:43 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:05:43 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:05:57 [ERROR]: Error creating user profile: Could not find the 'first_name' column of 'users' in the schema cache
+{
+  "service": "av-master-backend",
+  "code": "PGRST204",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:14:46 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:14:49 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:14:49 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:14:49 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:14:49 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:14:49 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:20:46 [ERROR]: Error creating user profile: insert or update on table "users" violates foreign key constraint "users_id_fkey"
+{
+  "service": "av-master-backend",
+  "code": "23503",
+  "details": "Key (id)=(835e582e-c93b-4e4b-a7c3-c50a71f9a3f9) is not present in table \"users\".",
+  "hint": null
+}
+2025-08-19 00:21:06 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:21:09 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:21:09 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:21:09 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:21:09 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:21:09 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:21:23 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(fdc60795-3c1e-4619-8a8c-e2f6a287639e) already exists.",
+  "hint": null
+}
+2025-08-19 00:21:30 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(6d77939c-e7a1-401b-9976-fba110ad66da) already exists.",
+  "hint": null
+}
+2025-08-19 00:21:36 [INFO]: User logged in: peter.lewis@worldcastlive.com
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:30:43 [ERROR]: Error checking existing user: infinite recursion detected in policy for relation "users"
+{
+  "service": "av-master-backend",
+  "code": "42P17",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:31:54 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:31:56 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:31:56 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:31:56 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:31:56 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:31:56 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:32:16 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(68f29f2d-b2c9-4f9e-9d10-2289074b3373) already exists.",
+  "hint": null
+}
+2025-08-19 00:32:28 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(029becd8-3743-42fc-942a-10a2410ea10d) already exists.",
+  "hint": null
+}
+2025-08-19 00:32:41 [INFO]: User logged in: peter.lewis@worldcastlive.com
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:37:32 [ERROR]: Error checking existing user: infinite recursion detected in policy for relation "users"
+{
+  "service": "av-master-backend",
+  "code": "42P17",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:38:59 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:39:02 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:39:02 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:39:02 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:39:02 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:39:02 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:43:14 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:43:16 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:43:16 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:43:16 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:43:16 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:43:16 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:43:32 [ERROR]: Error checking existing user: Could not find the function public.check_user_exists(user_email) in the schema cache
+{
+  "service": "av-master-backend",
+  "code": "PGRST202",
+  "details": "Searched for the function public.check_user_exists with parameter user_email or with a single unnamed json/jsonb parameter, but no matches were found in the schema cache.",
+  "hint": "Perhaps you meant to call the function public.create_user_preferences"
+}
+2025-08-19 00:50:13 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:50:15 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:50:15 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:50:15 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:50:15 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:50:15 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:50:30 [ERROR]: Error creating user profile: duplicate key value violates unique constraint "users_pkey"
+{
+  "service": "av-master-backend",
+  "code": "23505",
+  "details": "Key (id)=(b943bffb-e1ca-47a0-b580-7118edde4961) already exists.",
+  "hint": null
+}
+2025-08-19 00:51:16 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:51:19 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:51:19 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:51:19 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:51:19 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:51:19 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:51:34 [INFO]: User profile already exists, using existing profile
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:51:34 [ERROR]: Error creating game session: Could not find the 'updated_at' column of 'game_sessions' in the schema cache
+{
+  "service": "av-master-backend",
+  "code": "PGRST204",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:51:34 [INFO]: New user registered: testuser789@example.com
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:51:42 [INFO]: User logged in: testuser789@example.com
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:57:45 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:57:47 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:57:47 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:57:47 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:57:47 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:57:47 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:57:59 [ERROR]: Login error: Illegal arguments: string, undefined
+Error: Illegal arguments: string, undefined
+    at _async (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/bcryptjs/dist/bcrypt.js:286:46)
+    at /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/bcryptjs/dist/bcrypt.js:307:17
+    at new Promise (<anonymous>)
+    at bcrypt.compare (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/bcryptjs/dist/bcrypt.js:306:20)
+    at verifyPassword (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/auth.js:40:25)
+    at /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/auth.js:224:39
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:58:05 [ERROR]: Error creating auth user: A user with this email address has already been registered
+AuthApiError: A user with this email address has already been registered
+    at handleError (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:69:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async _handleRequest (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:114:9)
+    at async _request (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/lib/fetch.js:95:18)
+    at async GoTrueAdminApi.createUser (/Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/node_modules/@supabase/auth-js/dist/main/GoTrueAdminApi.js:116:20)
+    at async /Users/peterlewis/Documents/DevEnv/WCLLMSGAMES/backend/routes/auth.js:74:54
+{
+  "service": "av-master-backend",
+  "__isAuthError": true,
+  "name": "AuthApiError",
+  "status": 422,
+  "code": "email_exists"
+}
+2025-08-19 00:58:11 [INFO]: User profile already exists, updating with password hash
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:58:11 [ERROR]: Error updating user profile: Could not find the 'password_hash' column of 'users' in the schema cache
+{
+  "service": "av-master-backend",
+  "code": "PGRST204",
+  "details": null,
+  "hint": null
+}
+2025-08-19 00:59:49 [INFO]: SIGTERM received, shutting down gracefully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:59:51 [INFO]: ✅ Supabase client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:59:51 [INFO]: ✅ OpenAI client initialized successfully
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:59:51 [INFO]: 🚀 AV Master Backend Server running on port 3001
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:59:51 [INFO]: 📊 Environment: development
+{
+  "service": "av-master-backend"
+}
+2025-08-19 00:59:51 [INFO]: 🔗 Health check: http://localhost:3001/health
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:00:21 [INFO]: User logged in: testuser789@example.com
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:00:29 [INFO]: User profile already exists, updating with password hash
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:00:29 [INFO]: New user registered: freshuser123@example.com
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:00:36 [INFO]: User logged in: freshuser123@example.com
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:03:14 [INFO]: User profile already exists, updating with password hash
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:03:14 [INFO]: New user registered: info@worldcastlive.com
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:04:23 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:04:23 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 2438787b-f024-4a60-930c-6bf1eb63dc67
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:04:27 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 280, cost: $0.0014000000000000002
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:05:43 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 365, cost: $0.001825
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:09:28 [INFO]: Using existing game session: 0a7d65ed-5938-4580-a4e2-4bd6cdbcf7c9
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:09:28 [INFO]: New AI conversation started for user 07a63a2d-2861-4a55-9ef7-41becba6a310: 2910ad09-4c23-4af6-bad9-05251f2a0f0f
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:09:29 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 280, cost: $0.0014000000000000002
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:09:42 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 344, cost: $0.00172
+{
+  "service": "av-master-backend"
+}
+2025-08-19 01:12:51 [INFO]: AI chat processed for user 07a63a2d-2861-4a55-9ef7-41becba6a310, tokens: 429, cost: $0.002145
+{
+  "service": "av-master-backend"
+}
