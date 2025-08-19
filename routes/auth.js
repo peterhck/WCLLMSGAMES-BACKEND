@@ -384,6 +384,71 @@ router.get('/check-email/:email', async (req, res) => {
     }
 });
 
+// Test email domain restrictions
+router.get('/test-email-domains', async (req, res) => {
+    try {
+        const testResults = [];
+        
+        // Test different email domains
+        const testEmails = [
+            `test-${Date.now()}@example.com`,
+            `test-${Date.now()}@gmail.com`,
+            `test-${Date.now()}@frp.live`,
+            `test-${Date.now()}@worldcastlive.com`
+        ];
+        
+        for (const email of testEmails) {
+            console.log(`Testing email domain: ${email}`);
+            
+            try {
+                const { data: user, error } = await supabase.auth.admin.createUser({
+                    email: email,
+                    password: 'testpass123',
+                    email_confirm: true
+                });
+                
+                if (error) {
+                    testResults.push({
+                        email: email,
+                        domain: email.split('@')[1],
+                        success: false,
+                        error: error.message,
+                        code: error.code
+                    });
+                } else {
+                    testResults.push({
+                        email: email,
+                        domain: email.split('@')[1],
+                        success: true
+                    });
+                    
+                    // Clean up
+                    await supabase.auth.admin.deleteUser(user.user.id);
+                }
+            } catch (err) {
+                testResults.push({
+                    email: email,
+                    domain: email.split('@')[1],
+                    success: false,
+                    error: err.message
+                });
+            }
+        }
+        
+        res.json({
+            status: 'OK',
+            message: 'Email domain tests completed',
+            results: testResults,
+            timestamp: new Date().toISOString()
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Email domain test failed',
+            details: error.message
+        });
+    }
+});
+
 // Test database constraints and triggers
 router.get('/test-db-constraints', async (req, res) => {
     try {
@@ -579,26 +644,62 @@ router.post('/register', [
 
         let userProfile; // Declare variable for user profile
 
-        // Create user in Supabase Auth first
+                // Create user in Supabase Auth first
         console.log('Creating Supabase Auth user for:', email);
-
-        // Try creating user without metadata first to isolate the issue
+        
+        // Try creating user with minimal data first to isolate the issue
         let authUser, authError;
-
+        
         try {
-            const result = await supabase.auth.admin.createUser({
+            // First attempt: Create user with minimal data (no metadata)
+            console.log('Attempt 1: Creating user with minimal data');
+            const result1 = await supabase.auth.admin.createUser({
                 email: email,
                 password: password,
-                email_confirm: true,
-                user_metadata: {
-                    firstName: firstName,
-                    lastName: lastName,
-                    organization: organization || '',
-                    role: role || 'user'
-                }
+                email_confirm: true
             });
-            authUser = result.data;
-            authError = result.error;
+            
+            if (result1.error) {
+                console.log('Minimal creation failed:', result1.error);
+                // Second attempt: Try with different email format
+                const testEmail = `user-${Date.now()}@example.com`;
+                console.log('Attempt 2: Testing with different email:', testEmail);
+                const result2 = await supabase.auth.admin.createUser({
+                    email: testEmail,
+                    password: password,
+                    email_confirm: true
+                });
+                
+                if (result2.error) {
+                    console.log('Test email also failed:', result2.error);
+                    authError = result1.error; // Use original error
+                } else {
+                    // Test email worked, so the issue is with the specific email
+                    console.log('Test email worked, cleaning up');
+                    await supabase.auth.admin.deleteUser(result2.data.user.id);
+                    authError = result1.error; // Use original error
+                }
+            } else {
+                authUser = result1.data;
+                // Now update the user with metadata
+                console.log('Minimal creation succeeded, updating with metadata');
+                const { error: updateError } = await supabase.auth.admin.updateUserById(authUser.user.id, {
+                    user_metadata: {
+                        firstName: firstName,
+                        lastName: lastName,
+                        organization: organization || '',
+                        role: role || 'user'
+                    }
+                });
+                
+                if (updateError) {
+                    console.log('Metadata update failed:', updateError);
+                    // Clean up the user and return error
+                    await supabase.auth.admin.deleteUser(authUser.user.id);
+                    authError = updateError;
+                    authUser = null;
+                }
+            }
         } catch (error) {
             console.error('Exception during user creation:', error);
             authError = error;
