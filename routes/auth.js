@@ -96,17 +96,33 @@ router.get('/test-schema', async (req, res) => {
             });
         }
 
-        // Get table information
-        const { data: tableInfo, error: tableError } = await supabase
-            .rpc('get_table_info', { table_name: 'users' })
-            .catch(() => ({ data: null, error: { message: 'RPC not available' } }));
+        // Try to get table structure by attempting to select specific columns
+        const { data: idData, error: idError } = await supabase
+            .from('users')
+            .select('id')
+            .limit(1);
+
+        const { data: emailData, error: emailError } = await supabase
+            .from('users')
+            .select('email')
+            .limit(1);
+
+        const { data: nameData, error: nameError } = await supabase
+            .from('users')
+            .select('first_name, last_name')
+            .limit(1);
 
         res.json({
             status: 'OK',
             message: 'Database schema test successful',
             tableExists: true,
             sampleData: data,
-            tableInfo: tableInfo,
+            columnTests: {
+                id: idError ? 'missing' : 'exists',
+                email: emailError ? 'missing' : 'exists',
+                first_name: nameError ? 'missing' : 'exists',
+                last_name: nameError ? 'missing' : 'exists'
+            },
             timestamp: new Date().toISOString()
         });
     } catch (error) {
