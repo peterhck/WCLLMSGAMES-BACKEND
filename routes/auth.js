@@ -87,7 +87,7 @@ router.get('/test-schema', async (req, res) => {
             .from('users')
             .select('*')
             .limit(1);
-
+        
         if (error) {
             return res.status(500).json({
                 error: 'Database schema test failed',
@@ -95,23 +95,23 @@ router.get('/test-schema', async (req, res) => {
                 code: error.code
             });
         }
-
+        
         // Try to get table structure by attempting to select specific columns
         const { data: idData, error: idError } = await supabase
             .from('users')
             .select('id')
             .limit(1);
-
+            
         const { data: emailData, error: emailError } = await supabase
             .from('users')
             .select('email')
             .limit(1);
-
+            
         const { data: nameData, error: nameError } = await supabase
             .from('users')
             .select('first_name, last_name')
             .limit(1);
-
+        
         res.json({
             status: 'OK',
             message: 'Database schema test successful',
@@ -128,6 +128,73 @@ router.get('/test-schema', async (req, res) => {
     } catch (error) {
         res.status(500).json({
             error: 'Database schema test failed',
+            details: error.message
+        });
+    }
+});
+
+// Get detailed database schema
+router.get('/schema-details', async (req, res) => {
+    try {
+        // Get users table schema by querying information_schema
+        const { data: usersSchema, error: usersSchemaError } = await supabase
+            .from('information_schema.columns')
+            .select('column_name, data_type, is_nullable, column_default')
+            .eq('table_name', 'users')
+            .eq('table_schema', 'public');
+        
+        if (usersSchemaError) {
+            console.error('Error getting users table schema:', usersSchemaError);
+        }
+        
+        // Get auth.users table schema (if accessible)
+        const { data: authUsersSchema, error: authUsersSchemaError } = await supabase
+            .from('information_schema.columns')
+            .select('column_name, data_type, is_nullable, column_default')
+            .eq('table_name', 'users')
+            .eq('table_schema', 'auth');
+        
+        if (authUsersSchemaError) {
+            console.error('Error getting auth.users table schema:', authUsersSchemaError);
+        }
+        
+        // Get sample data from users table
+        const { data: usersSample, error: usersSampleError } = await supabase
+            .from('users')
+            .select('*')
+            .limit(3);
+        
+        if (usersSampleError) {
+            console.error('Error getting users sample data:', usersSampleError);
+        }
+        
+        // Get user count
+        const { count: userCount, error: countError } = await supabase
+            .from('users')
+            .select('*', { count: 'exact', head: true });
+        
+        if (countError) {
+            console.error('Error getting user count:', countError);
+        }
+        
+        res.json({
+            status: 'OK',
+            message: 'Database schema details retrieved',
+            usersTable: {
+                schema: usersSchema || [],
+                sampleData: usersSample || [],
+                userCount: userCount || 0,
+                schemaError: usersSchemaError?.message || null
+            },
+            authUsersTable: {
+                schema: authUsersSchema || [],
+                schemaError: authUsersSchemaError?.message || null
+            },
+            timestamp: new Date().toISOString()
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Schema details retrieval failed',
             details: error.message
         });
     }
