@@ -294,9 +294,9 @@ router.get('/test-auth-admin', async (req, res) => {
 router.get('/test-specific-user', async (req, res) => {
     try {
         const testEmail = `peter.lewis.${Date.now()}@frp.live`;
-        
+
         console.log('Testing user creation with pattern:', testEmail);
-        
+
         const { data: testUser, error: createError } = await supabase.auth.admin.createUser({
             email: testEmail,
             password: 'testpass123',
@@ -308,7 +308,7 @@ router.get('/test-specific-user', async (req, res) => {
                 role: 'user'
             }
         });
-        
+
         if (createError) {
             return res.status(500).json({
                 error: 'Specific user creation test failed',
@@ -323,12 +323,12 @@ router.get('/test-specific-user', async (req, res) => {
                 }
             });
         }
-        
+
         // Clean up test user
         if (testUser?.user?.id) {
             await supabase.auth.admin.deleteUser(testUser.user.id);
         }
-        
+
         res.json({
             status: 'OK',
             message: 'Specific user creation test successful',
@@ -343,19 +343,60 @@ router.get('/test-specific-user', async (req, res) => {
     }
 });
 
+// Check if specific email exists in Supabase Auth
+router.get('/check-email/:email', async (req, res) => {
+    try {
+        const email = req.params.email;
+        console.log('Checking if email exists in Supabase Auth:', email);
+
+        // List all users and search for the email
+        const { data: users, error: listError } = await supabase.auth.admin.listUsers({ page: 1, perPage: 1000 });
+
+        if (listError) {
+            return res.status(500).json({
+                error: 'Failed to list users',
+                details: listError.message,
+                code: listError.code
+            });
+        }
+
+        const existingUser = users.users.find(user => user.email === email);
+
+        res.json({
+            status: 'OK',
+            email: email,
+            exists: !!existingUser,
+            userCount: users.users.length,
+            existingUser: existingUser ? {
+                id: existingUser.id,
+                email: existingUser.email,
+                created_at: existingUser.created_at,
+                email_confirmed_at: existingUser.email_confirmed_at,
+                user_metadata: existingUser.user_metadata
+            } : null,
+            timestamp: new Date().toISOString()
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Email check failed',
+            details: error.message
+        });
+    }
+});
+
 // Test database constraints and triggers
 router.get('/test-db-constraints', async (req, res) => {
     try {
         // Test 1: Create user with minimal data (no metadata)
         const testEmail1 = `minimal-${Date.now()}@example.com`;
         console.log('Test 1: Creating user with minimal data:', testEmail1);
-        
+
         const { data: user1, error: error1 } = await supabase.auth.admin.createUser({
             email: testEmail1,
             password: 'testpass123',
             email_confirm: true
         });
-        
+
         if (error1) {
             return res.status(500).json({
                 error: 'Minimal user creation failed',
@@ -364,11 +405,11 @@ router.get('/test-db-constraints', async (req, res) => {
                 testEmail: testEmail1
             });
         }
-        
+
         // Test 2: Create user with metadata
         const testEmail2 = `metadata-${Date.now()}@example.com`;
         console.log('Test 2: Creating user with metadata:', testEmail2);
-        
+
         const { data: user2, error: error2 } = await supabase.auth.admin.createUser({
             email: testEmail2,
             password: 'testpass123',
@@ -378,13 +419,13 @@ router.get('/test-db-constraints', async (req, res) => {
                 lastName: 'User'
             }
         });
-        
+
         if (error2) {
             // Clean up first user
             if (user1?.user?.id) {
                 await supabase.auth.admin.deleteUser(user1.user.id);
             }
-            
+
             return res.status(500).json({
                 error: 'Metadata user creation failed',
                 details: error2.message,
@@ -392,11 +433,11 @@ router.get('/test-db-constraints', async (req, res) => {
                 testEmail: testEmail2
             });
         }
-        
+
         // Test 3: Create user with complex metadata
         const testEmail3 = `complex-${Date.now()}@example.com`;
         console.log('Test 3: Creating user with complex metadata:', testEmail3);
-        
+
         const { data: user3, error: error3 } = await supabase.auth.admin.createUser({
             email: testEmail3,
             password: 'testpass123',
@@ -409,7 +450,7 @@ router.get('/test-db-constraints', async (req, res) => {
                 preferences: { theme: 'dark' }
             }
         });
-        
+
         // Clean up all test users
         if (user1?.user?.id) {
             await supabase.auth.admin.deleteUser(user1.user.id);
@@ -420,7 +461,7 @@ router.get('/test-db-constraints', async (req, res) => {
         if (user3?.user?.id) {
             await supabase.auth.admin.deleteUser(user3.user.id);
         }
-        
+
         if (error3) {
             return res.status(500).json({
                 error: 'Complex metadata user creation failed',
@@ -429,7 +470,7 @@ router.get('/test-db-constraints', async (req, res) => {
                 testEmail: testEmail3
             });
         }
-        
+
         res.json({
             status: 'OK',
             message: 'All database constraint tests passed',
@@ -503,26 +544,32 @@ router.post('/register', [
 
         // Check if user already exists in Supabase Auth
         console.log('Checking if user already exists:', email);
-        const { data: existingAuthUser, error: checkError } = await supabase.auth.admin.listUsers({
-            page: 1,
-            perPage: 1000
-        });
 
-        if (checkError) {
-            console.error('Error checking existing users:', checkError);
-            return res.status(500).json({
-                error: 'Failed to check existing users',
-                details: checkError.message
+        try {
+            const { data: existingAuthUser, error: checkError } = await supabase.auth.admin.listUsers({
+                page: 1,
+                perPage: 1000
             });
-        }
 
-        const userExists = existingAuthUser.users?.some(user => user.email === email);
-        if (userExists) {
-            console.log('User already exists:', email);
-            return res.status(400).json({
-                error: 'User already exists',
-                message: 'A user with this email already exists'
-            });
+            if (checkError) {
+                console.error('Error checking existing users:', checkError);
+                return res.status(500).json({
+                    error: 'Failed to check existing users',
+                    details: checkError.message
+                });
+            }
+
+            const userExists = existingAuthUser.users?.some(user => user.email === email);
+            if (userExists) {
+                console.log('User already exists:', email);
+                return res.status(400).json({
+                    error: 'User already exists',
+                    message: 'A user with this email already exists'
+                });
+            }
+        } catch (error) {
+            console.error('Exception during user existence check:', error);
+            // Continue with registration attempt - let Supabase handle the duplicate error
         }
 
         console.log('User does not exist, proceeding with creation');
@@ -534,10 +581,10 @@ router.post('/register', [
 
         // Create user in Supabase Auth first
         console.log('Creating Supabase Auth user for:', email);
-        
+
         // Try creating user without metadata first to isolate the issue
         let authUser, authError;
-        
+
         try {
             const result = await supabase.auth.admin.createUser({
                 email: email,
@@ -567,11 +614,16 @@ router.post('/register', [
             });
             logger.error('Error creating auth user:', authError);
 
-            // Check if it's a duplicate email error
-            if (authError.message && authError.message.includes('duplicate')) {
+            // Check if it's a duplicate email error (multiple patterns)
+            if (authError.message && (
+                authError.message.includes('duplicate') ||
+                authError.message.includes('already exists') ||
+                authError.message.includes('already registered') ||
+                authError.code === 'unexpected_failure'
+            )) {
                 return res.status(400).json({
                     error: 'User already exists',
-                    message: 'A user with this email already exists'
+                    message: 'A user with this email already exists. Please try logging in instead.'
                 });
             }
 
