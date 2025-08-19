@@ -48,6 +48,37 @@ router.get('/test-db', async (req, res) => {
     }
 });
 
+// Test Supabase Auth configuration
+router.get('/test-auth', async (req, res) => {
+    try {
+        // Test if we can access auth admin functions
+        const { data, error } = await supabase.auth.admin.listUsers({
+            page: 1,
+            perPage: 1
+        });
+
+        if (error) {
+            return res.status(500).json({
+                error: 'Supabase Auth test failed',
+                details: error.message,
+                code: error.status
+            });
+        }
+
+        res.json({
+            status: 'OK',
+            message: 'Supabase Auth is working',
+            userCount: data.users?.length || 0,
+            timestamp: new Date().toISOString()
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Supabase Auth test failed',
+            details: error.message
+        });
+    }
+});
+
 // Initialize Supabase client
 const supabase = createClient(
     process.env.SUPABASE_URL,
